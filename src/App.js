@@ -49,7 +49,7 @@ class App extends React.Component {
               {/* <Asset version={this.state.code}></Asset> */}
               <div className="footer">
                 <p>Created using <a href="https://www.geora.io">Geora</a> and the Ethereum blockchain.</p>
-                <p>Written by Jamie Cerexhe (jamie@switchmaven.com) and Cadel Watson (cadel.watson@geora.io).</p>
+                <p>Written by Jamie Cerexhe (jamie@switchmaven.com), Cadel Watson (cadel.watson@geora.io), and the participants of the Papua New Guinea NICTA blockchain workshop.</p>
               </div>
             </header>
           </div>}
