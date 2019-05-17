@@ -14,13 +14,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.footer {
+  padding-top: 4em;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.footer a {
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+h1 {
+  margin-bottom: 0.2em;
+}
+
+.subtitle {
+  font-size: 0.6em;
+  font-style: italic;
 }
 
 @keyframes App-logo-spin {

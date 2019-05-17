@@ -25,14 +25,20 @@ class App extends React.Component {
 
         {!this.state.coffeeShown ? <div className="App">
           <header className="App-header">
-            <h1>Painim Kofi</h1>
+            <div>
+              <h1>Painim Kofi</h1>
+              <p className="subtitle">Your gateway to coffee provenance.</p>
+            </div>
 
-            <p>Add your coffee code.</p>
-            <input onChange={(e) => this.setState({ code: e.target.value })}></input>
-            <p>{this.state.code}</p>
-            <button onClick={() => this.setState({ coffeeShown: true })}>Find</button>
-
-
+            <div>
+              <p>Enter your coffee code:</p>
+              <input onChange={(e) => this.setState({ code: e.target.value })}></input>
+              <button onClick={() => this.setState({ coffeeShown: true })}>Find</button>
+            </div>
+            <div className="footer">
+              <p>Created using <a href="https://www.geora.io">Geora</a> and the Ethereum blockchain.</p>
+              <p>Written by Jamie Cerexhe (jamie@switchmaven.com) and Cadel Watson (cadel.watson@geora.io).</p>
+            </div>
           </header>
         </div> :
           <div className="App">
@@ -41,8 +47,14 @@ class App extends React.Component {
               <h1>Your coffee</h1>
               <DummyAsset dummyState={this.state.dummyState}></DummyAsset>
               {/* <Asset version={this.state.code}></Asset> */}
+              <div className="footer">
+                <p>Created using <a href="https://www.geora.io">Geora</a> and the Ethereum blockchain.</p>
+                <p>Written by Jamie Cerexhe (jamie@switchmaven.com) and Cadel Watson (cadel.watson@geora.io).</p>
+              </div>
             </header>
           </div>}
+
+
 
       </ApolloProvider>
 
